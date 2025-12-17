@@ -12,7 +12,7 @@ import TwitterCard from "./TwitterCard";
 import LinkedInCard from "./LinkedInCard";
 import YouTubeCard from "./YoutubeCard";
 
-const BACKEND_URL = "https://automatedpostingbackend.onrender.com";
+const BACKEND_URL = "https://aumation-postings-backend.onrender.com";
 
 export default function Dashboard() {
     const [sidebarWidth, setSidebarWidth] = useState(50);
