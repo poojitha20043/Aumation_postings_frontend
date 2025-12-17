@@ -1,0 +1,57 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+//import Dashboard from "./pages/Dashboard";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dashboard from "./pages/Dashboard";
+import Success from "./pages/Success";
+import PrivacyPolicy from "./pages/Privacy-policy";
+import ManualPost from "./pages/MannualPost";
+import TwitterConnect from "./pages/TwitterConnect";
+import TwitterManager from "./pages/TwitterManger";
+import TwitterCard from "./pages/TwitterCard";
+import FacebookCard from "./pages/FacebookCard";
+import InstagramCard from "./pages/InstagramCard";
+import LinkedinCard from "./pages/LinkedInCard";
+import YouTubeCard from "./pages/YoutubeCard";
+import AllPost from "./pages/AllPosts";
+import InstagramDashboard from "./pages/InstagramDashboard";
+import LinkedInConnect from "./pages/LinkedInConnect";
+import LinkedInManager from "./pages/LinkedinManager";
+
+
+
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/manual-post" element={<ManualPost />} />
+
+        <Route path="/twitter-connect" element={<TwitterConnect />} />
+        <Route path="/twitter-manager" element={<TwitterManager />} />
+
+          <Route path="/twitter-card" element={<TwitterCard />} />
+          <Route path="/facebook-card" element={<FacebookCard />} />
+          <Route path="/instagram-card" element={<InstagramCard />} />
+          <Route path="/linkedin-card" element={<LinkedinCard />} />
+          <Route path="/youtube-card" element={<YouTubeCard />} />
+          <Route path="/all-posts" element={<AllPost />} />
+
+          <Route path="/instagram-dashboard" element={<InstagramDashboard />} />
+           <Route path="/linkedin-connect" element={<LinkedInConnect />} />
+          <Route path="/linkedin-manager" element={<LinkedInManager />} />
+         
+        {/*  */}
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
