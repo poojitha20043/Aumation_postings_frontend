@@ -8,7 +8,7 @@ import { jwtDecode } from "jwt-decode";
 export default function LinkedInManager() {
     // Production URLs
     const BACKEND_URL = "https://aumation-postings-backend.onrender.com";
-    const FRONTEND_URL = "https://aumation-postings-frontend-q0z8.onrender.com";
+    const FRONTEND_URL = "https://aumation-postings-frontend-1.onrender.com";
     
     const [sidebarWidth, setSidebarWidth] = useState(50);
     const [linkedinAccount, setLinkedinAccount] = useState(null);
